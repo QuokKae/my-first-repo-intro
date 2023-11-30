@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+  // Set Variables
     var foodIcon = $("#logo");
     var quarterlyMenu = $(".menu");
     var menuSelect = $(".selection");
@@ -8,7 +8,7 @@ $(document).ready(function(){
     var hours = $(".hours");
     var mathGallery = $(".gallery");
       
-    // Sets initial opacity to 0 for all elements
+  // Sets initial opacity to 0 for all elements
       foodIcon.css({ opacity: 0 });
       quarterlyMenu.css({ opacity: 0 });
       mathsFaves.css({ opacity: 0 });
@@ -16,6 +16,7 @@ $(document).ready(function(){
       hours.css({ opacity: 0 });
       mathGallery.css({ opacity: 0 });
       
+  // Sets a mouse over effect for each variable
       foodIcon.mouseover(function(){
         $(this).fadeIn(300);
         $(this).animate({opacity:1});
